@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/woocommerce-direct-checkout',
-        'pretty_version' => 'dev-675643236fd4f031a8db071cf3aaf499ae64a8fe',
-        'version' => 'dev-675643236fd4f031a8db071cf3aaf499ae64a8fe',
-        'reference' => '675643236fd4f031a8db071cf3aaf499ae64a8fe',
+        'pretty_version' => 'v3.4.2',
+        'version' => '3.4.2.0',
+        'reference' => '75c41e3b2a5573d939fb15a295033bfe6babfd17',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'quadlayers/woocommerce-direct-checkout' => array(
-            'pretty_version' => 'dev-675643236fd4f031a8db071cf3aaf499ae64a8fe',
-            'version' => 'dev-675643236fd4f031a8db071cf3aaf499ae64a8fe',
-            'reference' => '675643236fd4f031a8db071cf3aaf499ae64a8fe',
+            'pretty_version' => 'v3.4.2',
+            'version' => '3.4.2.0',
+            'reference' => '75c41e3b2a5573d939fb15a295033bfe6babfd17',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

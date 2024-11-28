@@ -5,7 +5,7 @@ Tags: woocommerce ajax, woocommerce ajax cart, woocommerce direct checkout, wooc
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.7
-Stable tag: 3.4.1
+Stable tag: 3.4.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 WC requires at least: 4.0
@@ -67,7 +67,7 @@ The premium version of WooCommerce Direct Checkot allows to include a quick purc
 
 == Changelog ==
 
-= 3.4.1 =
+= 3.4.2 =
 * WooCommerce compatibility
 
 = 3.4.0 =

@@ -27,7 +27,7 @@ if ( class_exists( 'QuadLayers\\WP_Notice_Plugin_Promote\\Load' ) ) {
 		)
 	);
 	define( 'QLWCDC_PROMOTE_PREMIUM_SELL_URL', QLWCDC_PREMIUM_SELL_URL );
-	define( 'QLWCDC_PROMOTE_PREMIUM_INSTALL_URL', 'https://quadlayers.com/product/woocommerce-direct-checkout/?utm_source=qlwcdc_admin' );
+	define( 'QLWCDC_PROMOTE_PREMIUM_INSTALL_URL', 'https://quadlayers.com/products/woocommerce-direct-checkout/?utm_source=qlwcdc_admin' );
 	/**
 	 * Notice cross sell 1
 	 */
