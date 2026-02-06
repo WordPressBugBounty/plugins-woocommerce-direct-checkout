@@ -51,7 +51,7 @@ final class Plugin {
 				/**
 				 * Add premium CSS
 				 */
-				add_action( 'admin_footer', array( __CLASS__, 'add_premium_css' ) );
+				add_action( 'admin_footer', array( __CLASS__, 'add_premium_style' ) );
 				do_action( 'wcdc_init' );
 			}
 		);
@@ -104,7 +104,7 @@ final class Plugin {
 	/**
 	 * Remove premium
 	 */
-	public static function add_premium_css() {
+	public static function add_premium_style() {
 		?>
 		<script>
 		(function ($) {

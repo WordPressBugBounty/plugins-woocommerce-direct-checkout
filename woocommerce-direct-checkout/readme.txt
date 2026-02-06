@@ -4,12 +4,12 @@ Donate link: https://quadlayers.com/products/woocommerce-direct-checkout/
 Tags: woocommerce ajax, woocommerce ajax cart, woocommerce direct checkout, woocommerce quick buy, woocommerce one page checkout
 Requires at least: 4.7
 Requires PHP: 5.6
-Tested up to: 6.8
-Stable tag: 3.5.3
+Tested up to: 6.9
+Stable tag: 3.6.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 WC requires at least: 4.0
-WC tested up to: 10.0
+WC tested up to: 10.4
 
 Formerly "WooCommerce Direct Checkout". This plugin simplifies the entire WooCommerce checkout process to improve your sales rate.
 
@@ -66,6 +66,30 @@ The premium version of WooCommerce Direct Checkot allows to include a quick purc
 4. Increase your sales!
 
 == Changelog ==
+
+= 3.6.1 =
+* WooCommerce compatibility
+
+= 3.6.0 =
+* WordPress compatibility
+
+= 3.5.9 =
+* WooCommerce compatibility
+
+= 3.5.8 =
+* Fix: php errors
+
+= 3.5.7 =
+* Fix: premium compatibility
+
+= 3.5.6 =
+* WooCommerce compatibility
+
+= 3.5.5 =
+* Fix: php 7.2 errors
+
+= 3.5.4 =
+* WooCommerce compatibility
 
 = 3.5.3 =
 * Fix: update dependencies

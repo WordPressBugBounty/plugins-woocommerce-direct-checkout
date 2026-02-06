@@ -112,7 +112,7 @@ class General {
 		if ( wp_doing_ajax() || ( ! is_admin() && ! is_checkout() && 'no' !== get_option( 'qlwcdc_replace_cart_url', 'no' ) ) ) {
 
 			// Empty checkout redirect to custom/cart/shop.
-			if ( method_exists( WC(), 'cart' ) && method_exists( WC()->cart, 'is_empty' ) && WC()->cart->is_empty() ) {
+			if ( method_exists( WC(), 'cart' ) && ! empty( WC()->cart ) && method_exists( WC()->cart, 'is_empty' ) && WC()->cart->is_empty() ) {
 				return get_permalink( wc_get_page_id( 'shop' ) );
 			}
 
