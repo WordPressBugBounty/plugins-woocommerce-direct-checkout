@@ -24,9 +24,19 @@ class Checkout {
 	protected static $instance;
 
 	/**
+	 * Cached value of qlwcdc_remove_checkout_fields option.
+	 * Loaded once at construction time to avoid DB queries during shutdown.
+	 *
+	 * @var array
+	 */
+	protected $remove_checkout_fields;
+
+	/**
 	 * Construct
 	 */
 	public function __construct() {
+		$this->remove_checkout_fields = get_option( 'qlwcdc_remove_checkout_fields', array() );
+
 		add_filter( 'woocommerce_checkout_fields', array( $this, 'remove_checkout_fields' ) );
 
 		// add_filter('woocommerce_form_field_args', array($this, 'country_hidden_field_args'), 10, 4);.
@@ -66,7 +76,7 @@ class Checkout {
 	 * @param array $fields Fields.
 	 */
 	public function remove_checkout_fields( $fields ) {
-		$remove = get_option( 'qlwcdc_remove_checkout_fields', array() );
+		$remove = $this->remove_checkout_fields;
 		if ( $remove ) {
 
 			foreach ( $remove as $id => $key ) {
@@ -88,7 +98,7 @@ class Checkout {
 	 * @param array $countries Countries.
 	 */
 	public function remove_allowed_countries( $countries ) {
-		$remove = get_option( 'qlwcdc_remove_checkout_fields', array() );
+		$remove = $this->remove_checkout_fields;
 
 		if ( in_array( 'country', (array) $remove ) ) {
 
@@ -112,7 +122,7 @@ class Checkout {
 	 * Remove country css
 	 */
 	public function remove_country_css() {
-		$remove = get_option( 'qlwcdc_remove_checkout_fields', array() );
+		$remove = $this->remove_checkout_fields;
 		if ( in_array( 'country', (array) $remove ) ) {
 			?>
 			<style>
