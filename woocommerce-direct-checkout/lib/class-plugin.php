@@ -38,7 +38,7 @@ final class Plugin {
 		/**
 		 * Load plugin textdomain.
 		 */
-		add_action( 'init', array( $this, 'load_textdomain' ) );
+		add_action( 'init', array( $this, 'load_textdomain' ), 1 );
 		add_action(
 			'woocommerce_init',
 			function () {
@@ -58,7 +58,7 @@ final class Plugin {
 	}
 
 	public function load_textdomain() {
-		load_plugin_textdomain( 'woocommerce-direct-checkout', false, QLWCDC_PLUGIN_DIR . '/languages/' );
+		load_plugin_textdomain( 'woocommerce-direct-checkout', false, dirname( QLWCDC_PLUGIN_BASENAME ) . '/languages' );
 	}
 
 	/**
